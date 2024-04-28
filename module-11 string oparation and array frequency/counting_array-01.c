@@ -8,7 +8,7 @@ int main(){
     for(int i = 0;i < n; i++){
         scanf("%d",&arr[i]);
     }
-    int count[10] = {0};
+    int count[11] = {0};
 
      for(int i=0;i<n;i++){
 
@@ -25,8 +25,10 @@ int main(){
         count[arr[i]]++;
        
     }
-    for(int i=0;i<n;i++){
-        printf("%d -> %d\n",i,count[i]);
+    for(int i=0;i<=n;i++){
+        if(count[i]!=0){
+            printf("%d -> %d\n",i,count[i]);
+        }
     }
 
     
