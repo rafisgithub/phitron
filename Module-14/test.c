@@ -1,11 +1,13 @@
-#include <stdio.h>
-int sum(int x, int y)
-{
-    int res = x + y;
-    return res;
+#include<stdio.h>
+void fun(int *x){
+    *x = 1000;
 }
-int main()
-{
-    sum(5, 6);
+int main(){
+    int x = 10;
+
+    fun(&x);
+
+    printf("%d",x);
+
     return 0;
 }
