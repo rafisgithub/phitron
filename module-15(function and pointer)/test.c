@@ -1,14 +1,10 @@
-
 #include<stdio.h>
 
 int main(){
-
-int x=100;
-
-int *p=&x;
-
-
-
-printf("size of p-%d\n",sizeof(p));
-
+    int x,y;
+    int x= 0;
+    for(int i=1;i<=x;i++){
+        s = (x-1)
+    }
+    return 0;
 }

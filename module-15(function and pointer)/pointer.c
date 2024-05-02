@@ -11,6 +11,7 @@ int main(){
     
     printf("Size  of ptr : %d\n",sizeof(ptr));
 
+
     // int x = 100;
     // int * ptr = &x; 
 

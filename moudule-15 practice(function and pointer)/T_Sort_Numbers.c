@@ -26,7 +26,10 @@ int main(){
      for(int i=0;i<3;i++){
         printf("%d\n",arr[i]);
     }
+
     printf("\n");
+
     printf("%d\n%d\n%d",a,b,c);
+    
     return 0;
 }

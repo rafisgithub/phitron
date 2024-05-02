@@ -1,9 +1,10 @@
 #include<stdio.h>
-void fun(int *arr,int len){
+void fun(int arr[],int len){
     //  printf("Len of array: %p\n",arr);
 
     for(int i=0;i<len;i++){
-        printf("%d ",*(arr+i));
+        printf("%d ",*(arr+1));
+
     }
 }
 int main(){
