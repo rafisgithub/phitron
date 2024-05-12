@@ -1,0 +1,1 @@
+{"name":"Local: a_beautifull_matrix","url":"d:\\phitron\\module-19\\a_beautifull_matrix.c","tests":[{"id":1715187348649,"input":"0 0 1 0 0\n0 0 0 0 0\n0 0 0 0 0\n0 0 0 0 0\n0 0 0 0 0","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\phitron\\module-19\\a_beautifull_matrix.c","group":"local","local":true}
