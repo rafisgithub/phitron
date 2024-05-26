@@ -2,27 +2,23 @@
 
 using namespace std;
 
-
-bool skipSpace(char a, char b) {
-    if (a == ' ') return false;  
-    if (b == ' ') return true;   
-    return a < b;
-}
-
 int main() {
-    string s;
-    while (getline(cin, s)) {
-        
-        size_t len = s.length();
-        
-        if (len > 0 && s[len - 1] == '\n') {
-            s[len - 1] = '\0';
-        }
- 
-        sort(s.begin(), s.end(), skipSpace);
-        
-        cout << s << endl;
-    }
+    char s[100010];
+    while (fgets(s, 100010, stdin)) {
+        char temp[100010];
+        int len = strlen(s);
+        int j = 0; 
 
+        for (int i = 0; i < len; i++) {
+            if (s[i] >= 'a' && s[i] <= 'z') {
+                temp[j++] = s[i]; 
+            }
+        }
+        temp[j] = '\0'; 
+        
+        sort(temp, temp + j); 
+
+        cout << temp << "\n"; 
+    }
     return 0;
 }
