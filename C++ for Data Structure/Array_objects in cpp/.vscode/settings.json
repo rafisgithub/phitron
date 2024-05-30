@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "istream": "cpp",
+        "*.tcc": "cpp",
+        "iostream": "cpp"
+    }
+}
