@@ -29,6 +29,8 @@ int main(){
 
    auto it = find(v.begin(),v.end(),x);
 
+
+
    if(it!=v.end()){
     cout<<"Yes";
    }else{

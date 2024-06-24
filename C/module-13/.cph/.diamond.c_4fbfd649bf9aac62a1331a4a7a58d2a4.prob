@@ -1,0 +1,1 @@
+{"name":"Local: diamond","url":"d:\\phitron\\C\\module-13\\diamond.c","tests":[{"id":1718347550146,"input":"5","output":"     *\n    ***\n   *****\n  *******\n *********\n *********\n  *******\n   *****\n    ***\n     *"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\phitron\\C\\module-13\\diamond.c","group":"local","local":true}
