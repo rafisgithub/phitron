@@ -35,7 +35,7 @@ void print_linked_list(Node *head) {
         temp = temp->next;
     }
     cout << endl << endl;
-}
+}f
 int main(){
     Node *head = NULL;
     int val;
