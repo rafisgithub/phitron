@@ -14,6 +14,9 @@ class Node{
 };
 
 void build_linked_list(Node *&head, Node *&tail, int val){
+
+    cout<<head<<endl;
+    
     Node *newNode = new Node(val);
 
     if(head == NULL){
@@ -26,41 +29,12 @@ void build_linked_list(Node *&head, Node *&tail, int val){
     }
 }
 
-void search_val(Node *head,int val){
-    Node *temp = head;
-    bool flag = false;
-    while (temp!=NULL)
-    {
-       if(temp->val == val){
-        flag = true;
-        break;
-       }
-       temp = temp->next;
-    }
-
-    if(flag){
-        cout<<"YES\n";
-    }else{
-        cout<<"NO\n";
-    }
-}
-
 int main(){
     Node *head = NULL;
     Node *tail = NULL;
+    cout<<&head<<endl;
 
-    while (true)
-    {
-       int val;
-       cin >> val;
+   build_linked_list(head,tail,10);
 
-       if(val == -1) break;
-
-       build_linked_list(head,tail,val);
-    }
-    // search_val(head);
-    int val;
-    cin >> val;
-    search_val(head,val);
     return 0;
 }

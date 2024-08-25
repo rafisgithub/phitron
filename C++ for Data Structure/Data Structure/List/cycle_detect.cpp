@@ -30,6 +30,7 @@ int main(){
     Node* slow = head;
     Node *fast = head;
     bool flag = false;
+    
     while (fast != NULL && fast->next != NULL)
     {
         slow = slow->next;

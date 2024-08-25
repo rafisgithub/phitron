@@ -70,6 +70,7 @@ void insert_at_any_pos(Node *&head, int pos, int v) {
 void delete_from_any_position(Node *head,int pos)
 {
     Node *temp = head;
+    
     for (int i = 1; i < pos; i++)
     {
         temp = temp->next;
