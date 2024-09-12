@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vector<int> v[1000];
+vector<int> v[1005];
 bool vis[1005];
 
 void bfs(int src)

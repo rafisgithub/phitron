@@ -6,6 +6,8 @@ vector<int> mat[1005];
 
 bool is_visited[1005];
 
+int level[1005];
+
 
 void bfs(int src)
 {
@@ -13,17 +15,19 @@ void bfs(int src)
 
     q.push(src);
     is_visited[src] = true;
+    level[src] = 0;
 
     while(!q.empty()){
         int f = q.front();
         q.pop();
 
-        cout << f << " ";
+        // cout << f << " ";
 
         for(int x : mat[f]){
             if(is_visited[x] == false){
                 q.push(x);
                 is_visited[x] = true;
+                level[x] = level[f]+1;
             }
         }
     }
@@ -45,8 +49,14 @@ int main(){
     cin>>src;
 
     memset(is_visited,false,sizeof(is_visited));
+    memset(level,-1,sizeof(level));
 
     bfs(src);
+
+
+    for(int i=0;i<n;i++){
+        cout <<i<<" : "<< level[i]<<endl;
+    }
 
 
     return 0;
