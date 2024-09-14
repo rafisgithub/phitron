@@ -7,28 +7,17 @@ bool ans;
 vector<int> adj[N];
 int parent_arr[N];
 
-void bfs(int s){
-    queue<int> q;
-    q.push(s);
-    vis[s] = true;
+void dfs(int parent){
 
-    while(!q.empty())
-    {
-
-        int parent = q.front();
-        q.pop();
-        // cout << parent<<" ";
-
-        for(int child: adj[parent]){
-            if(vis[child] && parent_arr[parent]!=child){
-                ans = true;
-            }
-            if(!vis[child]){
-                vis[child] = true;
-                parent_arr[child] = parent;
-                q.push(child);
-
-            }
+    vis[parent] = true;
+    // cout << parent << endl;
+    for(int child : adj[parent]){
+        if(vis[child] && child!=parent_arr[parent]){
+            ans  = true;
+        }
+        if(vis[child] == false){
+            dfs(child);
+            parent_arr[child] = parent;
         }
     }
 }
@@ -52,12 +41,12 @@ int main(){
 
     for(int i=0;i<n;i++){
         if(!vis[i]){
-            bfs(i);
+            dfs(i);
         }
     }
 
     if(ans){
-        cout << "Cycle fond\n";
+        cout << "Cycle found\n";
     }else{
         cout <<" NOT found\n";
     }
