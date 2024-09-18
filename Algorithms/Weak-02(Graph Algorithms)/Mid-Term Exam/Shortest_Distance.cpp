@@ -6,6 +6,7 @@ int main()
 {
     long long int n,e;
     cin>>n>>e;
+    
     long long int mat[n+1][n+1];
     
     for(int i=1;i<=n;i++)
