@@ -1,7 +1,20 @@
 #include<stdio.h>
 
 int main() {
-    int n;
-    
+
+   int arr[5][5];
+
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+
+       
+        for(int j=0;j<5;j++){
+            printf("%d ",arr[0][j]);
+        
+        
+    }
     return 0;
 }
