@@ -30,10 +30,18 @@ int main(){
 
     }
 
-    int s;
-    cin>>s;
+
     memset(vis,false,sizeof(vis));
 
-    dfs(s);
+
+    int component = 0;
+    for(int i=0;i<n;i++){
+        if(!vis[i]){
+            dfs(i);
+            component++;
+        }
+    }
+
+    cout <<endl<< "component :" component << endl;
     return 0;
 }
