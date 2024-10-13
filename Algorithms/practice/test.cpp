@@ -1,74 +1,28 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
-class Solution
-{
-public:
-    bool dfs(int src, int parent, vector<bool> &vis, vector<int> adj[])
-    {
-        vis[src] = true;
+int main() {
+    int n;
+    cin>>n;
 
-        for (int child : adj[src])
-        {
+    int arr[n]; //4 4 5 5 1 1 0 0 9 9
 
-            if (vis[child] && child != parent)
-            {
-                return true;
-            }
-
-            if (!vis[child])
-            {
-                if (dfs(child, src, vis, adj))
-                {
-                    return true;
-                }
-            }
-        }
-        return false;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
     }
 
-    bool isCycle(int V, vector<int> adj[])
-    {
-        vector<bool> vis(V, false);
+    int c[10] = {0};
 
-        for (int i = 0; i < V; i++)
-        {
-            if (!vis[i])
-            {
-                if (dfs(i, -1, vis, adj))
-                {
-                    return true;
-                }
-            }
-        }
-
-        return false;
+    for(int i=0;i<n;i++){
+       c[arr[i]]++;
     }
-};
 
-int main()
-{
-    int tc;
-    cin >> tc;
-    while (tc--)
-    {
-        int V, E;
-        cin >> V >> E;
-        vector<int> adj[V];
-        for (int i = 0; i < E; i++)
-        {
-            int u, v;
-            cin >> u >> v;
-            adj[u].push_back(v);
-            adj[v].push_back(u);
+    for(int i=0;i<10;i++){
+        if(c[i]!=0){
+            cout << i<<" " <<c[i]<<endl;
         }
-
-        Solution obj;
-        bool ans = obj.isCycle(V, adj);
-        if (ans)
-            cout << "1\n";
-        else
-            cout << "0\n";
     }
+
     return 0;
 }
