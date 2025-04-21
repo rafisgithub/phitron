@@ -10,7 +10,7 @@ int main() {
         len++;
     }
    
-    for(int i=0;i<19;i++){
+    for(int i=0;i<len;i++){
        if(s[i] >= 'a' && s[i] <= 'z'){
             s[i]-=32;
        }else if(s[i] >= 'A' && s[i] <= 'Z'){
