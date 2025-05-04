@@ -9,12 +9,6 @@ int main() {
    
     int newArr[n];
 
-    for(int i=0;i<n;i++) {
-        scanf("%d",&arr[i]);
-        sum = sum + arr[i];
-        newArr[i] = sum;
-        printf("%d ",newArr[i]);
-    }
 
 
 
