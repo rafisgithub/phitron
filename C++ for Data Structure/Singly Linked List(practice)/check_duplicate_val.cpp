@@ -16,6 +16,7 @@ class Node{
 };
 
 void build_linked_list(Node *&head,int val){
+    
    Node *newNode = new Node(val);
 
    if(head == NULL){

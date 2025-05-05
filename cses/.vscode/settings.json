@@ -1,0 +1,14 @@
+{
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "files.associations": {
+        "stdlib.h": "c",
+        "corecrt_wstdlib.h": "c",
+        "string": "c",
+        "string.h": "c"
+    }
+}

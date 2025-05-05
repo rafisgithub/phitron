@@ -1,3 +1,5 @@
-   // if(arr[i]==' '){
-        //     count[26]++;
-        // }
+
+void fun() {
+    printf("%d\n",x);
+
+}
