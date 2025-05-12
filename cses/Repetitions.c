@@ -6,8 +6,7 @@ int main() {
     scanf("%s",s);
 
     int s_len = strlen(s);
-
-
+     
     
     return 0;
 }
