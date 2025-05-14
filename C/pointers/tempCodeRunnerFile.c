@@ -1,1 +1,3 @@
-    printf("%d\n",x);
+for (i = 0; i < 5; i++)
+// printf("%d ", p[i]);
+// }
