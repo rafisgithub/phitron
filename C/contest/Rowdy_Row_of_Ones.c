@@ -15,7 +15,7 @@ int main() {
 
     int counter[n];
 
-    for(int i = 0; i < m; i++) {
+    for(int i = 0; i < n; i++) {
         counter[i] = 0;
     }
     for(int i = 0; i < n; i++) {
@@ -33,9 +33,7 @@ int main() {
        if(max < counter[i]) {
             max = counter[i];
             rows = i;
-       }else if (counter[i] == max && i < rows) {
-            rows = i;
-        }
+       }
     }
 
     printf("%d\n",rows);
