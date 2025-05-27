@@ -2,6 +2,7 @@
 #include <stdbool.h>
 
 int main() {
+
     int l, r;
     scanf("%d %d", &l, &r);
 
@@ -25,10 +26,10 @@ int main() {
             flag = true;
         }
     }
-
     if (!flag) {
-        printf("-1\n");
-    }
+            printf("-1\n");
+        }
+   
 
     return 0;
 }
