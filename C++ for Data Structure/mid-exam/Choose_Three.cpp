@@ -5,10 +5,9 @@ using namespace std;
 int main() {
 
     int t;
-
+    cin >> t;
     while(t--) {
         int n,s;
-        bool flag = false;
 
         cin >>n >> s;
 
@@ -19,24 +18,28 @@ int main() {
         }
 
         int sum = 0;
+        bool flag = false;
 
         for(int i=0; i<n-2;i++) {
-            cout << "i = " << i << endl;
             for(int j=i+1; j<n-1;j++) {
-                 cout << "j = " << j << endl;
                 for(int k=j+1; k<n;k++) {
-                    cout << "k = " << k << endl;
+                    sum = arr[i] + arr[j] + arr[k];
+                    if(sum == s){
+                        flag = true;
+                        break;
+                    }
+                    sum = 0;
                 }
 
             }
 
         }
 
-        // if(flag){
-        //     cout <<"NO\n";
-        // }else{
-        //    cout <<"YES\n";
-        // }
+        if(flag){
+            cout <<"YES\n";
+        }else{
+           cout <<"NO\n";
+        }
     }
     return 0;
 }
