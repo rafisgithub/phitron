@@ -10,5 +10,6 @@ int main() {
     for(string::iterator it = s.begin();it<s.end();it++){
         cout << *it <<endl;
     }
+    
     return 0;
 }
