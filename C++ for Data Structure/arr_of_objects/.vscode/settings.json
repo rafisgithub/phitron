@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
@@ -58,18 +57,7 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "istream": "cpp",
-    "chrono": "cpp",
-    "string": "cpp",
-    "flat_map": "cpp",
-    "flat_set": "cpp",
-    "regex": "cpp",
+    "iostream": "cpp",
     "ostream": "cpp"
   }
-=======
-    "files.associations": {
-        "iostream": "cpp",
-        "charconv": "cpp"
-    }
->>>>>>> 72c3d6903484838a1c6ebdece41a1cd7b7859fb2
 }
