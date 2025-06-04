@@ -4,6 +4,7 @@ using namespace std;
 
 int main() {
 
+<<<<<<< HEAD
     // string s = "Rafi ";
     // s += "Ahmed";
 
@@ -30,5 +31,13 @@ int main() {
 
     cout << s; 
 
+=======
+    string s;
+    cin >> s;
+
+    for(string::iterator it = s.begin();it<s.end();it++){
+        cout << *it <<endl;
+    }
+>>>>>>> 72c3d6903484838a1c6ebdece41a1cd7b7859fb2
     return 0;
 }

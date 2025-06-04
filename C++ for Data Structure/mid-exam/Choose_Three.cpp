@@ -6,10 +6,12 @@ int main() {
 
     int t;
     cin >> t;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72c3d6903484838a1c6ebdece41a1cd7b7859fb2
     while(t--) {
         int n,s;
-        bool flag = false;
 
         cin >>n >> s;
 
@@ -20,8 +22,10 @@ int main() {
         }
 
         int sum = 0;
+        bool flag = false;
 
         for(int i=0; i<n-2;i++) {
+<<<<<<< HEAD
           
             for(int j=i+1; j<n-1;j++) {
                 for(int k=j+1; k<n;k++) {
@@ -30,6 +34,16 @@ int main() {
                     flag = true;
 
                    }
+=======
+            for(int j=i+1; j<n-1;j++) {
+                for(int k=j+1; k<n;k++) {
+                    sum = arr[i] + arr[j] + arr[k];
+                    if(sum == s){
+                        flag = true;
+                        break;
+                    }
+                    sum = 0;
+>>>>>>> 72c3d6903484838a1c6ebdece41a1cd7b7859fb2
                 }
 
             }
@@ -38,9 +52,14 @@ int main() {
 
         if(flag){
             cout <<"YES\n";
+<<<<<<< HEAD
            
         }else{
             cout <<"NO\n";
+=======
+        }else{
+           cout <<"NO\n";
+>>>>>>> 72c3d6903484838a1c6ebdece41a1cd7b7859fb2
         }
     }
     return 0;

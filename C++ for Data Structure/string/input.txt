@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Hello world
+=======
+Hello Rafi How are you?
+>>>>>>> 72c3d6903484838a1c6ebdece41a1cd7b7859fb2
