@@ -25,17 +25,16 @@ int main() {
     }
 
 
-    for(int i=0; i<n;i++) {
-        int left_sum = 0;
-        int right_sum = 0;
+    for(int position=0; position<n;position++) {
+        int sum_of_before_postion = 0;
+        int sum_of_after_position = 0;
 
-        left_sum = i == 0 ? 0 : prefix_sum[i-1];
-        right_sum = prefix_sum[n-1] - prefix_sum[i];
+        sum_of_before_postion = position == 0 ? 0 : prefix_sum[position-1];
+        sum_of_after_position = prefix_sum[n-1] - prefix_sum[position];
 
-        cout << left_sum << " " << right_sum <<endl;
 
-        if(left_sum == right_sum) {
-            cout << i << endl;
+        if(sum_of_before_postion == sum_of_after_position) {
+            cout << position << endl;
             break;
         }
     }
