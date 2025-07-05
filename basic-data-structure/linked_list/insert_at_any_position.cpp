@@ -12,11 +12,17 @@ class Node {
         }
 };
 
-void insert_at_head(Node* &head,int val){
+void insert_at_any_position(Node* &head, int val, int idx){
     Node* newNode = new Node(val);
 
-    newNode->next = head;
-    head = newNode;
+    Node* temp = head;
+
+    for(int i = 1; i < idx; i++) {
+        temp = temp->next;
+    }
+
+    newNode->next = temp->next;
+    temp->next = newNode;
 }
 
 void print_linked_list(Node* head){
@@ -35,7 +41,7 @@ int main() {
     head->next = a;
     a->next = b;
 
-    insert_at_head(head,100);
+    insert_at_any_position(head,100,3);
     print_linked_list(head);
 
 

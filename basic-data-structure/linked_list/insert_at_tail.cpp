@@ -12,11 +12,14 @@ class Node {
         }
 };
 
-void insert_at_head(Node* &head,int val){
+void insert_at_tail(Node* &head,int val){
     Node* newNode = new Node(val);
+    Node* temp = head;
 
-    newNode->next = head;
-    head = newNode;
+    while(temp->next!=NULL){
+        temp = temp->next;
+    }
+    temp->next = newNode;
 }
 
 void print_linked_list(Node* head){
@@ -34,8 +37,9 @@ int main() {
     Node* b = new Node(30);
     head->next = a;
     a->next = b;
+    print_linked_list(head);
 
-    insert_at_head(head,100);
+    insert_at_tail(head,100);
     print_linked_list(head);
 
 
