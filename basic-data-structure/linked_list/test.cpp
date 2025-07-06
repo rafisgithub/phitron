@@ -1,18 +1,12 @@
-#include<bits/stdc++.h>
-
+#include <bits/stdc++.h>
 using namespace std;
-
+void fun(int *&p){
+p = NULL;
+}
 int main() {
-
-    int n;
-    cin >> n;
-
-    for(int i = 1; i <=10; i++) {
-        for(int j = 1; j <= 10; j++) {
-            cout << n << " * " << j << " = " << n *j ;
-        }
-        cout << endl;
-    }
-    
-    return 0;
+int val = 10;
+int *ptr = &val;
+fun(ptr);
+cout << ptr << endl;
+return 0;
 }

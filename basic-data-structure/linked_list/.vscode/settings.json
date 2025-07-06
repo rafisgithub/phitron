@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+    "files.associations": {
+        "iostream": "cpp"
+    }
+=======
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
@@ -60,4 +65,5 @@
     "ostream": "cpp",
     "new": "cpp"
   }
+>>>>>>> 243a280d70a082b226c8a15380fe902c0d26d82e
 }
