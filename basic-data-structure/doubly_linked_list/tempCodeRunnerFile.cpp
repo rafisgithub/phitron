@@ -1,0 +1,1 @@
+    temp->next->prev = newNode;
