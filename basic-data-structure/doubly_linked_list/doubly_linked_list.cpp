@@ -14,7 +14,6 @@ class Node {
             this->prev = NULL;
         }
 };
-
 int main() {
 
     Node* head = new Node(10);
@@ -25,6 +24,14 @@ int main() {
     head->next = a;
     a->next = b;
     a->prev = head;
+
+    b->next = c;
+    b->prev = a;
+
+    while(head != NULL) {
+        cout << head->val <<" ";
+        head = head->next;
+    }
     
     return 0;
 }
