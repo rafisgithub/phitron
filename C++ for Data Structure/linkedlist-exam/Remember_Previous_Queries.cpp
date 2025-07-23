@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void printList(const list<int>& lst) {
+void printList(list<int>& lst) {
     cout << "L -> ";
     for (int val : lst) {
         cout << val << " ";
@@ -16,12 +16,12 @@ void printList(const list<int>& lst) {
 }
 
 int main() {
-    
+
     list<int> list;
     int q;
     cin >> q;
 
-    while (q--) {
+    while(q--) {
         int x, v;
         cin >> x >> v;
 
