@@ -1,53 +1,39 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 
 using namespace std;
 
-vector<int> mat[1005];
+int main() {
 
-bool is_visited[1005];
-
-
-void bfs(int src)
-{
-    queue<int> q;
-
-    q.push(src);
-    is_visited[src] = true;
-
-    while(!q.empty()){
-        int f = q.front();
-        q.pop();
-
-        cout << f << " ";
-
-        for(int x : mat[f]){
-            if(is_visited[x] == false){
-                q.push(x);
-                is_visited[x] = true;
-            }
-        }
-    }
-}
-int main(){
     int n,e;
-    cin>>n>>e;
+    cin >> n >> e;
 
-    while(e--)
-    {
-        int a,b;
-        cin>>a>>b;
+    int mat[n][n];
 
-        mat[a].push_back(b);
-        mat[b].push_back(a);
+    memset(mat,0,sizeof(mat));
+
+    for(int i = 0;i<n;i++) {
+        for(int j=0;j<n;j++) {
+            cout << mat[i][j] << " ";
+        }
+
+        cout << endl;
     }
 
-    int src;
-    cin>>src;
+    while(e--) {
+        int a,b;
+        cin >> a >> b;
 
-    memset(is_visited,false,sizeof(is_visited));
+        mat[a][b] = 1;
+        mat[b][a] = 1;
+    }
 
-    bfs(src);
+    for(int i = 0;i<n;i++) {
+        for(int j=0;j<n;j++) {
+            cout << mat[i][j] << " ";
+        }
 
+        cout << endl;
+    }
 
     return 0;
 }
